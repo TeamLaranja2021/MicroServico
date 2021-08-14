@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: 'jwt'
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/sistemaDocumentacao
+    username: root
+    password: rot
+    Driver: com.mysql.jdbc.Driver
+  #spring
+  jpa:
+    show-sql: true
+    formt-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8081
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
